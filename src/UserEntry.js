@@ -18,7 +18,7 @@ class UserEntry extends React.PureComponent {
                 username,
               });
             }}>
-            <h2>What's your name?</h2>
+            <h2>What&apos;s your name?</h2>
             <input
               type="text"
               name="username"

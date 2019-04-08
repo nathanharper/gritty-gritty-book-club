@@ -3,6 +3,12 @@ import React from 'react';
 import { StaticRouter } from 'react-router-dom';
 import express from 'express';
 import { renderToString } from 'react-dom/server';
+import path from 'path';
+import * as sqlite3 from 'sqlite3/lib/sqlite3';
+
+sqlite3.verbose();
+const dbName = 'grittybase.db';
+const db = new sqlite3.Database(path.resolve(__dirname, '..', dbName));
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 

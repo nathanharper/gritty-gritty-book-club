@@ -3,11 +3,7 @@ import 'jquery-bracket/dist/jquery.bracket.min.css';
 import $ from 'jquery';
 
 class Bracket extends React.PureComponent {
-  constructor(props) {
-    super(props);
-
-    this.ref = React.createRef();
-  }
+  ref = React.createRef();
 
   componentDidMount() {
     // needs to be imported dynamically or else Razzle chokes looking for the jQuery global
