@@ -11,6 +11,7 @@ class App extends React.PureComponent {
 
     this.state = {
       ...defaultContext,
+      ...props,
       setContext: (newState, callback) => {
         this.setState(newState, callback);
       },
